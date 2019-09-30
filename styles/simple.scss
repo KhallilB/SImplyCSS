@@ -35,3 +35,7 @@ a {
 // Navbar
 @import './components/navbar/navbar';
 @include navbar-primary;
+
+// Headings
+@import './components/headings/header';
+@include primary--header;

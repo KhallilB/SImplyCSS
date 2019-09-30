@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Abel|Crimson+Text|Fjalla+One&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Abel|Crimson+Text|Fjalla+One&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Abel|Crimson+Text|Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Sans&display=swap");
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -64,7 +65,7 @@ a {
 }
 
 .navbar-primary .menu .menu-item {
-  font-family: 'Crimson Text', serif;
+  font-family: 'Noto Sans', sans-serif;
   color: #e8e8e8;
   font-size: 1.2em;
   letter-spacing: 3;
@@ -76,5 +77,14 @@ a {
   transition: all 0.3s;
   color: #a2c3a4;
   cursor: pointer;
+}
+
+.primary-header {
+  font-family: 'Fjalla One', sans-serif;
+  color: #0E1111;
+  font-size: 3em;
+  font-weight: bold;
+  color: #0E1111;
+  padding: 20px;
 }
 /*# sourceMappingURL=simple.css.map */
