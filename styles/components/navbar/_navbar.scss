@@ -24,6 +24,13 @@
                 @include secondary--font($color: $white, $size: 1.2em, $ls: 3);
 
                 margin: 10px;
+
+                &:hover {
+                    transition: all 0.3s;
+
+                    color: $secondaryColor;
+                    cursor: pointer;
+                }
             }
         }
     }

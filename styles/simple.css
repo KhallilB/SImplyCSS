@@ -70,4 +70,11 @@ a {
   letter-spacing: 3;
   margin: 10px;
 }
+
+.navbar-primary .menu .menu-item:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #a2c3a4;
+  cursor: pointer;
+}
 /*# sourceMappingURL=simple.css.map */
