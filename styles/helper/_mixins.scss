@@ -1,0 +1,66 @@
+@import '../helper/functions';
+@import '../helper/variable';
+
+// FONTS
+@import url('https://fonts.googleapis.com/css?family=Abel|Crimson+Text|Fjalla+One&display=swap');
+
+@mixin primary--font($color: false, $size: false, $lh: false, $ls: false) {
+    font-family: 'Fjalla One', sans-serif;
+
+    @if $color {
+        color: $color;
+    }
+
+    @if $size {
+        font-size: $size;
+    }
+
+    @if $lh {
+        line-height: $lh;
+    }
+
+    @if $ls {
+        letter-spacing: $ls;
+    }
+}
+
+@mixin secondary--font($color: false, $size: false, $lh: false, $ls: false) {
+    font-family: 'Crimson Text', serif;
+
+
+    @if $color {
+        color: $color;
+    }
+
+    @if $size {
+        font-size: $size;
+    }
+
+    @if $lh {
+        line-height: $lh;
+    }
+
+    @if $ls {
+        letter-spacing: $ls;
+    }
+}
+
+@mixin alt--font($color: false, $size: false, $lh: false, $ls: false) {
+    font-family: 'Abel', sans-serif;
+
+    @if $color {
+        color: $color;
+    }
+
+    @if $size {
+        font-size: $size;
+    }
+
+    @if $lh {
+        line-height: $lh;
+    }
+
+    @if $ls {
+        letter-spacing: $ls;
+    }
+}

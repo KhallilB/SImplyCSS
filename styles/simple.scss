@@ -1,6 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Crimson+Text|Fjalla+One&display=swap');
+@import './helper/variable';
+@import './helper/mixins';
+@import './helper/functions';
+
 body {
     box-sizing: border-box;
     margin: 0 auto;
     padding: auto;
     background-color: $white;
+    font-size: 1em;
 }
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+// Flex Arrangement
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-around {
+    justify-content: space-around;
+}
+
+.justify-content-evenly {
+    justify-content: space-evenly
+}
+
+// Navbar
+@import './components/navbar/navbar';
+@include navbar-primary;
