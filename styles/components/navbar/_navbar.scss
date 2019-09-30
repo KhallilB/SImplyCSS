@@ -1,0 +1,28 @@
+@import '../../helper/functions';
+@import '../../helper/mixins';
+@import '../../helper/variable';
+
+@mixin navbar-primary {
+    .navbar-primary {
+        background-color: $primaryColor;
+        color: $white;
+
+        padding: 20px;
+
+        display: flex;
+        align-items: center;
+
+        .logo {
+            font-size: 2em;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+
+            .menu-item {
+                margin: 10px;
+            }
+        }
+    }
+}
