@@ -2,15 +2,14 @@
 @import url("https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Sans&display=swap");
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0 auto;
   padding: auto;
-  background-color: #FFF;
+  background-color: #fff;
   font-family: 'Fjalla One', sans-serif;
-  color: #0E1111;
+  color: #0e1111;
   font-size: 1em;
 }
 
@@ -46,7 +45,8 @@ code {
   font-family: 'Noto Sans', sans-serif;
   color: #666;
   font-size: 0.8em;
-  background: #e8e8e8;
+  font-weight: 600;
+  background: #d4d1d1;
   border-left: 3px solid #525b76;
   border-radius: 5px;
   margin-top: 1.6em;
@@ -69,12 +69,12 @@ blockquote {
   border-left: 8px solid #525b76;
   border-radius: 15px;
   position: relative;
-  background: #e8e8e8;
+  background: #d4d1d1;
 }
 
 blockquote::before {
   font-family: Arial;
-  content: "\201C";
+  content: '\201C';
   color: #525b76;
   font-size: 4em;
   position: absolute;
@@ -104,7 +104,7 @@ a {
   color: #525b76;
   font-family: 'Noto Sans', sans-serif;
   font-size: 1em;
-  font-weight: 550;
+  font-weight: 600;
 }
 
 a:hover {
@@ -163,7 +163,7 @@ h6 {
 
 .navbar-primary {
   background-color: #525b76;
-  color: #e8e8e8;
+  color: #d4d1d1;
   padding: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -175,7 +175,7 @@ h6 {
 
 .navbar-primary .logo {
   font-family: 'Fjalla One', sans-serif;
-  color: #e8e8e8;
+  color: #d4d1d1;
   font-size: 2em;
   letter-spacing: 3;
 }
@@ -191,7 +191,7 @@ h6 {
 
 .navbar-primary .menu .menu-item {
   font-family: 'Noto Sans', sans-serif;
-  color: #e8e8e8;
+  color: #d4d1d1;
   font-size: 1.2em;
   letter-spacing: 3;
   margin: 10px;
@@ -202,14 +202,5 @@ h6 {
   transition: all 0.3s;
   color: #a2c3a4;
   cursor: pointer;
-}
-
-.primary-header {
-  font-family: 'Fjalla One', sans-serif;
-  color: #0E1111;
-  font-size: 3em;
-  font-weight: bold;
-  color: #0E1111;
-  padding: 20px;
 }
 /*# sourceMappingURL=simple.css.map */

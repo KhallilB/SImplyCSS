@@ -2,111 +2,127 @@
 @import '../../helper/mixins';
 @import '../../helper/variable';
 
+// Removes all stiling for tags
 @mixin remove--default-style {
-    ul {
-        list-style-type: none;
-    }
+  ul {
+    list-style-type: none;
+  }
 
-    a:link {
-        text-decoration: none;
-    }
+  a:link {
+    text-decoration: none;
+  }
 }
 
+// Tag styling & Typography
 @mixin text--styling {
-    mark {
-        background-color: $lightSecondary;
+  mark {
+    background-color: $lightSecondary;
+  }
+
+  strong {
+    @include primary--font($size: 1.15em, $weight: bold);
+  }
+
+  em {
+    @include secondary--font($size: 1.1em);
+  }
+
+  p {
+    @include secondary--font($size: 1em);
+  }
+
+  code {
+    @include secondary--font(
+      $size: 0.8em,
+      $color: #666,
+      $weight: 600
+    );
+
+    background: $white;
+    border-left: 3px solid $primaryColor;
+    border-radius: 5px;
+
+    margin-top: 1.6em;
+    margin-bottom: 1em;
+    padding: 20px;
+
+    max-width: 100%;
+    overflow: auto;
+    display: block;
+  }
+
+  blockquote {
+    @include secondary--font(
+      $size: 1.2em,
+      $lh: 1.6,
+      $color: #666
+    );
+    font-style: italic;
+
+    width: 60%;
+    margin: 50px auto;
+    padding: 1.2em 30px 1.2em 75px;
+
+    border-left: 8px solid $primaryColor;
+    border-radius: 15px;
+
+    position: relative;
+    background: $white;
+
+    &::before {
+      font-family: Arial;
+      content: '\201C';
+      color: $primaryColor;
+      font-size: 4em;
+      position: absolute;
+      left: 10px;
+      top: -10px;
     }
 
-    strong {
-        @include primary--font($size: 1.15em, $weight: bold);
+    &::after {
+      content: '';
     }
 
-    em {
-        @include secondary--font($size: 1.1em);
+    cite {
+      display: block;
+      color: $darkSecondary;
+      font-style: italic;
+      margin-top: 1em;
     }
+  }
 
-    p {
-        @include secondary--font($size: 1em);
+  hr {
+    border: 0;
+    border-radius: 2px;
+    height: 4px;
+    background-color: $darkSecondary;
+  }
+
+  a {
+    color: $primaryColor;
+    @include secondary--font($size: 1em, $weight: 600);
+
+    &:hover {
+      transition: 0.4s all;
+      color: $darkPrimary;
     }
+  }
 
-    code {
-        @include secondary--font($size: .8em, $color: #666);
+  // H1-H6 Tags
+  @for $i from 1 through 6 {
+    $size: 5.5em / ($i + 0.2);
 
-        background: $white;
-        border-left: 3px solid $primaryColor;
-        border-radius: 5px;
-
-        margin-top: 1.6em;
-        margin-bottom: 1em;
-        padding: 20px;
-
-        max-width: 100%;
-        overflow: auto;
-        display: block;
+    h#{$i} {
+      font-size: $size;
     }
+  }
 
-    blockquote {
-        @include secondary--font($size: 1.2em, $lh: 1.6, $color: #666);
-        font-style: italic;
-
-        width: 60%;
-        margin: 50px auto;
-        padding: 1.2em 30px 1.2em 75px;
-
-        border-left: 8px solid $primaryColor;
-        border-radius: 15px;
-
-        position: relative;
-        background: $white;
-
-        &::before {
-            font-family: Arial;
-            content: "\201C";
-            color: $primaryColor;
-            font-size: 4em;
-            position: absolute;
-            left: 10px;
-            top: -10px;
-        }
-
-        &::after {
-            content: '';
-        }
-
-        cite {
-            display: block;
-            color: $darkSecondary;
-            font-style: italic;
-            margin-top: 1em;
-        }
-    }
-
-    hr {
-        border: 0;
-        border-radius: 2px;
-        height: 4px;
-        background-color: $darkSecondary;
-    }
-
-    a {
-        color: $primaryColor;
-        @include secondary--font($size: 1em, $weight: 550);
-
-        &:hover {
-            transition: 0.4s all;
-            color: $darkPrimary;
-        }
-    }
-
-    @for $i from 1 through 6 {
-        $size: 5.5em / ($i + 0.2);
-
-        h#{$i} {
-            font-size: $size;
-        }
-    }
-
-    .text-muted {
-        @include secondary--font($size: 1em, $color: #666, $weight: 400);
-    }
+  // Muted Text
+  .text-muted {
+    @include secondary--font(
+      $size: 1em,
+      $color: #666,
+      $weight: 400
+    );
+  }
 }
