@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Sans&display=swap");
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -202,5 +203,10 @@ h6 {
   transition: all 0.3s;
   color: #a2c3a4;
   cursor: pointer;
+}
+
+form {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1em;
 }
 /*# sourceMappingURL=simple.css.map */

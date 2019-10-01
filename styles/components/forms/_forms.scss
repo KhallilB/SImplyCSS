@@ -1,0 +1,9 @@
+@import '../../../styles/helper/functions';
+@import '../../../styles/helper/mixins';
+@import '../../../styles/helper/variable';
+
+@mixin form--styling {
+  form {
+    @include secondary--font($size: 1em);
+  }
+}
