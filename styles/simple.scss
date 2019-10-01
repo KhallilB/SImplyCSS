@@ -4,13 +4,13 @@
 @import './helper/functions';
 
 body {
-    box-sizing: border-box;
-    margin: 0 auto;
-    padding: auto;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: auto;
 
-    background-color: #FFF;
+  background-color: #fff;
 
-    @include primary--font($color: $black, $size: 1em);
+  @include primary--font($color: $black, $size: 1em);
 }
 
 // Typography
@@ -18,24 +18,19 @@ body {
 @include remove--default-style;
 @include text--styling;
 
-
 // Flex Arrangement
 .justify-content-between {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .justify-content-around {
-    justify-content: space-around;
+  justify-content: space-around;
 }
 
 .justify-content-evenly {
-    justify-content: space-evenly
+  justify-content: space-evenly;
 }
 
 // Navbar
 @import './components/navbar/navbar';
 @include navbar-primary;
-
-// Headings
-@import './components/headings/header';
-@include primary--header;
