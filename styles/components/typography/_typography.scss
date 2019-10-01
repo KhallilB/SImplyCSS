@@ -100,7 +100,7 @@
 
   a {
     color: $primaryColor;
-    @include secondary--font($size: 1em, $weight: 550);
+    @include secondary--font($size: 1em, $weight: 600);
 
     &:hover {
       transition: 0.4s all;
