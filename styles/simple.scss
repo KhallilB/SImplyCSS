@@ -7,17 +7,17 @@ body {
     box-sizing: border-box;
     margin: 0 auto;
     padding: auto;
-    background-color: $white;
-    font-size: 1em;
+
+    background-color: #FFF;
+
+    @include primary--font($color: $black, $size: 1em);
 }
 
-ul {
-    list-style-type: none;
-}
+// Typography
+@import './components/typography/typography';
+@include remove--default-style;
+@include text--styling;
 
-a {
-    text-decoration: none;
-}
 
 // Flex Arrangement
 .justify-content-between {
