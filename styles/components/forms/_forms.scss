@@ -2,8 +2,78 @@
 @import '../../../styles/helper/mixins';
 @import '../../../styles/helper/variable';
 
+@mixin remove--default-form {
+  input:required {
+    box-shadow: none;
+  }
+}
+
 @mixin form--styling {
   form {
     @include secondary--font($size: 1em);
+
+    padding: 3em;
+
+    background-color: $white;
+    border-left: 5px solid $primaryColor;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    > label {
+      display: flex;
+      justify-content: flex-end;
+      padding: 0.5em;
+      text-align: center;
+
+      > span {
+        padding: 0.5em 1em 0.5em 0;
+        flex: 1;
+      }
+
+      > input {
+        flex: 2;
+
+        padding: 1em;
+
+        border: solid 2px #fff;
+        border-radius: 20px;
+
+        &:invalid {
+          box-shadow: none;
+          border-color: none;
+        }
+
+        &:focus {
+          transition: 0.3s all;
+          border: solid 2px $secondaryColor;
+        }
+
+        &::placeholder {
+          @include secondary--font($size: 1em, $color: #666);
+        }
+      }
+
+      > textarea {
+        flex: 2;
+
+        padding: 1em;
+
+        border: solid 2px #fff;
+        resize: none;
+        border-radius: 20px;
+
+        &:focus {
+          transition: 0.3s all;
+          border: solid 2px $secondaryColor;
+        }
+
+        &::placeholder {
+          @include secondary--font($size: 1em, $color: #666);
+        }
+      }
+    }
   }
 }
