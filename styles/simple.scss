@@ -34,3 +34,7 @@ body {
 // Navbar
 @import './components/navbar/navbar';
 @include navbar-primary;
+
+// Forms
+@import './components/forms/forms';
+@include form--styling;

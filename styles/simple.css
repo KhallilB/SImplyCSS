@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Sans&display=swap");
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -202,5 +203,127 @@ h6 {
   transition: all 0.3s;
   color: #a2c3a4;
   cursor: pointer;
+}
+
+form {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1em;
+  padding: 3em;
+  background-color: #d4d1d1;
+  border-left: 5px solid #525b76;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+form > label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0.5em;
+  text-align: center;
+}
+
+form > label > span {
+  padding: 0.5em 1em 0.5em 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+form > label > input {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  padding: 1em;
+  border: solid 2px #fff;
+  border-radius: 20px;
+}
+
+form > label > input:invalid {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: none;
+}
+
+form > label > input:focus {
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  border: solid 2px #a2c3a4;
+}
+
+form > label > input::-webkit-input-placeholder {
+  font-family: 'Noto Sans', sans-serif;
+  color: #666;
+  font-size: 1em;
+}
+
+form > label > input:-ms-input-placeholder {
+  font-family: 'Noto Sans', sans-serif;
+  color: #666;
+  font-size: 1em;
+}
+
+form > label > input::-ms-input-placeholder {
+  font-family: 'Noto Sans', sans-serif;
+  color: #666;
+  font-size: 1em;
+}
+
+form > label > input::placeholder {
+  font-family: 'Noto Sans', sans-serif;
+  color: #666;
+  font-size: 1em;
+}
+
+form > label > textarea {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  padding: 1em;
+  border: solid 2px #fff;
+  resize: none;
+  border-radius: 20px;
+}
+
+form > label > textarea:focus {
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+  border: solid 2px #a2c3a4;
+}
+
+form > label > textarea::-webkit-input-placeholder {
+  font-family: 'Noto Sans', sans-serif;
+  color: #666;
+  font-size: 0.9em;
+}
+
+form > label > textarea:-ms-input-placeholder {
+  font-family: 'Noto Sans', sans-serif;
+  color: #666;
+  font-size: 0.9em;
+}
+
+form > label > textarea::-ms-input-placeholder {
+  font-family: 'Noto Sans', sans-serif;
+  color: #666;
+  font-size: 0.9em;
+}
+
+form > label > textarea::placeholder {
+  font-family: 'Noto Sans', sans-serif;
+  color: #666;
+  font-size: 0.9em;
 }
 /*# sourceMappingURL=simple.css.map */
