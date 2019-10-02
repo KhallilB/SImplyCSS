@@ -2,12 +2,7 @@
 @import '../../../styles/helper/mixins';
 @import '../../../styles/helper/variable';
 
-@mixin remove--default-form {
-  input:required {
-    box-shadow: none;
-  }
-}
-
+// FORM STYLING
 @mixin form--styling {
   form {
     @include secondary--font($size: 1em);
@@ -22,17 +17,20 @@
     flex-direction: column;
     justify-content: center;
 
+    // OUTER LABEL
     > label {
       display: flex;
       justify-content: flex-end;
       padding: 0.5em;
       text-align: center;
 
+      // SPANS
       > span {
         padding: 0.5em 1em 0.5em 0;
         flex: 1;
       }
 
+      // INPUT FIELDS
       > input {
         flex: 2;
 
@@ -56,6 +54,7 @@
         }
       }
 
+      // TEXT AREA
       > textarea {
         flex: 2;
 
@@ -71,9 +70,12 @@
         }
 
         &::placeholder {
-          @include secondary--font($size: 1em, $color: #666);
+          @include secondary--font($size: 0.9em, $color: #666);
         }
       }
     }
+
+    // CHECKBOX & RADIO
+    // Hiding rule from old browsers
   }
 }

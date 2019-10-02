@@ -306,29 +306,24 @@ form > label > textarea:focus {
 form > label > textarea::-webkit-input-placeholder {
   font-family: 'Noto Sans', sans-serif;
   color: #666;
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 form > label > textarea:-ms-input-placeholder {
   font-family: 'Noto Sans', sans-serif;
   color: #666;
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 form > label > textarea::-ms-input-placeholder {
   font-family: 'Noto Sans', sans-serif;
   color: #666;
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 form > label > textarea::placeholder {
   font-family: 'Noto Sans', sans-serif;
   color: #666;
-  font-size: 1em;
-}
-
-input:required {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  font-size: 0.9em;
 }
 /*# sourceMappingURL=simple.css.map */
