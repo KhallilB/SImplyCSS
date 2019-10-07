@@ -224,4 +224,25 @@ form textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
+
+form input[type='text']:active, form input[type='text']:focus,
+form input[type='email']:active,
+form input[type='email']:focus,
+form input[type='password']:active,
+form input[type='password']:focus,
+form textarea:active,
+form textarea:focus {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  border: solid 2px #a2c3a4;
+}
+
+form input[type='text']:invalid,
+form input[type='email']:invalid,
+form input[type='password']:invalid,
+form textarea:invalid {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: none;
+}
 /*# sourceMappingURL=simple.css.map */
