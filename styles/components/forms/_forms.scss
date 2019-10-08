@@ -22,75 +22,17 @@
             margin-top: 6px;
             margin-bottom: 16px;
             resize: vertical;
+
+            &:active,
+            &:focus {
+                transition: all 0.2s;
+                border: solid 2px $secondaryColor;
+            }
+
+            &:invalid {
+                box-shadow: none;
+                border-color: none;
+            }
         }
-
-
-        // form {
-        //     @include secondary--font($size: 1em);
-
-        //     padding: 3em;
-
-        //     background-color: $white;
-        //     border-left: 5px solid $primaryColor;
-        //     border-radius: 15px;
-
-        //     display: flex;
-        //     flex-direction: column;
-        //     justify-content: center;
-
-        //     // OUTER LABEL
-        //     >label {
-
-
-        //         // SPANS
-        //         >span {
-        //             padding: 0.5em 1em 0.5em 0;
-        //             flex: 1;
-        //         }
-
-        //         // INPUT FIELDS
-        //         >input {
-        //             flex: 2;
-
-        //             padding: 1em;
-
-        //             border: solid 2px rgb(100, 100, 100);
-        //             border-radius: 20px;
-
-        //             &:invalid {
-        //                 box-shadow: none;
-        //                 border-color: none;
-        //             }
-
-        //             &:focus {
-        //                 transition: 0.3s all;
-        //                 border: solid 2px $secondaryColor;
-        //             }
-
-        //             &::placeholder {
-        //                 @include secondary--font($size: 1em, $color: #666);
-        //             }
-        //         }
-
-        //         // TEXT AREA
-        //         >textarea {
-        //             flex: 2;
-
-        //             padding: 1em;
-
-        //             border: solid 2px rgb(100, 100, 100);
-        //             resize: none;
-        //             border-radius: 20px;
-
-        //             &:focus {
-        //                 transition: 0.3s all;
-        //                 border: solid 2px $secondaryColor;
-        //             }
-
-        //             &::placeholder {
-        //                 @include secondary--font($size: 0.9em, $color: #666);
-        //             }
-        //         }
-        //     }
     }
 }

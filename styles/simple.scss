@@ -38,3 +38,7 @@ body {
 // Forms
 @import './components/forms/forms';
 @include form--styling;
+
+// Buttons
+@import './components/buttons/buttons';
+@include button--styling;

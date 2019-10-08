@@ -1,0 +1,73 @@
+@import '../../helper/functions';
+@import '../../helper/mixins';
+@import '../../helper/variable';
+
+@mixin button--styling {
+
+    .bttn {
+        @include secondary--font($size: 1em);
+
+        padding: 1em;
+        width: 10vw;
+
+        background: $white;
+        color: #FFF;
+
+        border: solid 2px #FFF;
+        border-radius: 5px;
+
+
+        &:hover {
+            transition: all 0.35s;
+
+            background-color: $shadedWhite;
+            background-color: $grey;
+        }
+
+        &:active {
+            transition: all 0.05s;
+
+            transform: translate(4%, 4%);
+            background-color: $shadedWhite;
+        }
+    }
+
+    .bttn-primary {
+        background: $lightSecondary;
+
+        &:hover {
+            background-color: $darkSecondary;
+        }
+
+        &:active {
+            background-color: $primaryColor;
+        }
+    }
+
+    .bttn-secondary {
+        background-color: $lightPrimary;
+
+        &:hover {
+            background-color: $darkPrimary;
+        }
+
+        &:active {
+            background-color: $secondaryColor;
+        }
+    }
+
+    .bttn-standard {
+        background-color: #FFF;
+        border: solid 2px $white;
+
+        color: $white;
+
+        &:hover {
+            color: #FFF;
+            background-color: $white;
+        }
+
+
+    }
+
+}
